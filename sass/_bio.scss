@@ -1,0 +1,54 @@
+.s-hero-bio {
+  background-color: $brand-white;
+  padding: 5rem 0;
+  text-align: center;
+  img {
+    width: 100%;
+    margin-left: 2.3rem;
+  }
+  span {
+    color: $gray-600;
+  }
+}
+
+.links-bio {
+  padding: 5rem 0;
+  ul {
+    @include flex(column, space-between, center);
+    gap: 4rem;
+    li {
+      @include flex(row, start, center);
+      gap: 2rem;
+      width: 100%;
+      background: linear-gradient(
+        121.65deg,
+        #f2d3bf 0%,
+        #f2d2be 0.01%,
+        #e09590 100%
+      );
+      padding: 2rem 4rem;
+      border-radius: 0.5rem;
+      height: 10rem;
+      a {
+        color: $gray-600;
+      }
+    }
+  }
+}
+
+footer.footer-bio {
+  background-color: $brand-brown;
+  padding: 5rem 0;
+  .container {
+    @include flex(column, space-between, center);
+    gap: 3rem;
+    color: $brand-white;
+    a {
+      color: $brand-white;
+    }
+  }
+  .instagram {
+    @include flex(row, space-between, center);
+    gap: 1rem;
+  }
+}

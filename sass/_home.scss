@@ -1,0 +1,291 @@
+.s-hero {
+  padding-top: 7rem;
+  background-color: $brand-white;
+  margin-bottom: 7rem;
+  .container {
+    @include flex(row, space-between, center);
+    gap: 5rem;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 53.4rem;
+    height: 63.4rem;
+    position: relative;
+    .hero-image,
+    .folliage {
+      position: absolute;
+    }
+    .hero-image {
+      width: 100%;
+      max-width: 53.4rem;
+      bottom: -3.5rem;
+    }
+    .folliage {
+      bottom: -9rem;
+      right: -11rem;
+    }
+  }
+
+  .text {
+    @include flex(column, space-between, start);
+    gap: 2rem;
+    p {
+      width: 100%;
+      max-width: 57.3rem;
+    }
+  }
+}
+
+.s-psicoterapia {
+  padding: 17rem 0;
+  .container {
+    @include flex(row, space-between, center);
+    gap: 15rem;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 53.4rem;
+    height: 63.4rem;
+    position: relative;
+    .hero-image,
+    .folliage {
+      position: absolute;
+    }
+    .hero-image {
+      width: 100%;
+      max-width: 53.4rem;
+      bottom: -3.5rem;
+    }
+    .folliage {
+      bottom: -6rem;
+      left: -7rem;
+    }
+  }
+
+  .text {
+    @include flex(column, space-between, start);
+    gap: 2rem;
+    p {
+      width: 100%;
+      max-width: 57.3rem;
+    }
+  }
+}
+
+.s-atendimento {
+  background-color: $brand-white;
+  padding: 5.5rem 0;
+  margin-bottom: 8rem;
+  .container {
+    @include flex(column, space-between, center);
+  }
+  h2,
+  span {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    @include flex(row, space-between, center);
+    gap: 2.5rem;
+
+    li {
+      .item {
+        width: 100%;
+        max-width: 39rem;
+        padding: 7rem 2rem;
+        border: 2px solid $brand-salmon;
+        border-radius: 1rem;
+        position: relative;
+        margin: 4rem 0;
+        text-align: center;
+        img {
+          position: absolute;
+          top: -3rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+.s-testmonials {
+  margin-bottom: 5.5rem;
+  .container {
+    @include flex(row, space-between, start);
+    gap: 5rem;
+  }
+
+  .testmonials-list {
+    @include flex(column, space-between, center);
+    gap: 4rem;
+    li {
+      .item {
+        width: 100%;
+        max-width: 56rem;
+        background: linear-gradient(
+          121.65deg,
+          #f2d3bf 0%,
+          #f2d2be 0.01%,
+          #e09590 100%
+        );
+        // padding: 4rem 2.5rem;
+        border-radius: 0.5rem;
+        position: relative;
+
+        .aspas {
+          position: absolute;
+          width: 100%;
+          max-width: 8rem;
+          top: -3rem;
+          left: 2rem;
+        }
+
+        p {
+          // margin-top: 4rem;
+          padding: 4rem 2.5rem;
+          height: 16.6rem;
+        }
+      }
+    }
+  }
+  .text {
+    @include flex(column, space-between, start);
+    gap: 2rem;
+    p {
+      width: 100%;
+      max-width: 57.3rem;
+      margin-bottom: 11.3rem;
+    }
+  }
+}
+
+.s-faq {
+  .container {
+    @include flex(column, space-between, center);
+  }
+  span {
+    margin-bottom: 2rem;
+  }
+  // FAQ
+  .faqs-list {
+    width: 100%;
+    max-width: 108rem;
+    margin: 4rem;
+    margin-inline: auto;
+
+    button {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 112%;
+      letter-spacing: -0.5px;
+      color: $brand-white;
+    }
+    .faq-question {
+      padding: 16px 24px;
+      margin-bottom: 1.2rem;
+      border-radius: 8px;
+      background: $brand-brown;
+      transition: all 1s;
+      box-shadow: $gray-600;
+      transition: box-shadow 0.5s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+    }
+    .faq-question:hover {
+      box-shadow: $gray-600;
+    }
+
+    .faq-question.active {
+      margin-bottom: 0;
+      border-radius: 8px 8px 0 0;
+    }
+    .faq-question.active i {
+      transform: rotate(-90deg);
+    }
+    .faq-question.active + .faq-answer {
+      display: block;
+    }
+    .faq-question i {
+      transition: 0.5s;
+    }
+    .faq-question button {
+      font-family: "Poppins", sans-serif;
+      text-align: start;
+      background: unset;
+      border: none;
+    }
+    .faq-answer {
+      margin-bottom: 3.2rem;
+      padding: 2rem 0;
+      font-family: "Poppins", sans-serif;
+      border-radius: 0 0 8px 8px;
+      background: $brand-bege;
+      box-shadow: $gray-600;
+      position: relative;
+      z-index: 20;
+      display: none;
+    }
+    .faq-answer__content {
+      padding: 2rem 3rem;
+      padding-top: 0;
+      margin: 0;
+
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.7rem;
+        line-height: 112%;
+        color: $gray-600;
+      }
+      .faq-answer__content * {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.s-message {
+  background-color: $brand-white;
+  padding: 4rem 0;
+  .container {
+    @include flex(column, space-between, center);
+    text-align: center;
+  }
+  p {
+    font-size: 1.8rem;
+    width: 100%;
+    max-width: 86.4rem;
+    span {
+      font-size: 2.6rem;
+      font-weight: 600;
+      color: $brand-brown;
+    }
+  }
+}
+
+footer {
+  background-color: $brand-brown;
+  padding: 5rem 0;
+  .container {
+    @include flex(row, space-between, center);
+    color: $brand-white;
+    a {
+      color: $brand-white;
+    }
+  }
+  .instagram {
+    @include flex(row, space-between, center);
+    gap: 1rem;
+  }
+}

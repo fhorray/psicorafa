@@ -1,0 +1,28 @@
+header {
+  padding: 2.4rem 0;
+  .container {
+    @include flex(row, space-between, center);
+  }
+
+  ul {
+    @include flex(row, space-between, center);
+    gap: 2rem;
+    li {
+      a {
+        color: $gray-600;
+        padding: 2rem;
+        transition: all 0.3s ease-in;
+        border-radius: 0.5rem;
+        &:hover {
+          background-color: $brand-white;
+        }
+      }
+    }
+  }
+}
+
+header.header-bio {
+  .container-bio {
+    @include flex(row, center, center);
+  }
+}
