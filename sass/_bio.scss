@@ -5,6 +5,7 @@
   .h1-bio {
     font-size: 4rem;
   }
+
   img {
     width: 100%;
     margin-left: 2.3rem;
@@ -16,6 +17,14 @@
 
 .links-bio {
   padding: 5rem 0;
+  .h2-bio {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
   ul {
     @include flex(column, space-between, center);
     gap: 2rem;

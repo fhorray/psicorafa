@@ -375,6 +375,13 @@ footer {
 
 .links-bio {
   padding: 5rem 0; }
+  .links-bio .h2-bio {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
   .links-bio ul {
     display: flex;
     flex-direction: column;
