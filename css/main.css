@@ -365,6 +365,8 @@ footer {
   background-color: #fff9f8;
   padding: 5rem 0;
   text-align: center; }
+  .s-hero-bio .h1-bio {
+    font-size: 4rem; }
   .s-hero-bio img {
     width: 100%;
     margin-left: 2.3rem; }
@@ -378,7 +380,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 4rem; }
+    gap: 2rem; }
     .links-bio ul li {
       display: flex;
       flex-direction: row;
