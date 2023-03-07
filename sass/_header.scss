@@ -7,8 +7,10 @@ header {
   ul {
     @include flex(row, space-between, center);
     gap: 2rem;
+    text-align: center;
     li {
       a {
+        display: inline-block;
         color: $gray-600;
         padding: 2rem;
         transition: all 0.3s ease-in;
@@ -17,6 +19,29 @@ header {
           background-color: $brand-white;
         }
       }
+    }
+  }
+  .menu-hamburguer {
+    display: none;
+    cursor: pointer;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .menu-shown {
+    display: block;
+  }
+
+  @include responsive(900px) {
+    .container {
+      @include flex(column, space-between, center);
+      gap: 3.3rem;
+    }
+    ul {
+      display: none;
+    }
+    .menu-hamburguer {
+      display: block;
     }
   }
 }

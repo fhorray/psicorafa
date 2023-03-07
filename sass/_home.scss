@@ -35,6 +35,38 @@
       max-width: 57.3rem;
     }
   }
+
+  @include responsive(980px) {
+    text-align: center;
+    padding-bottom: 5rem;
+    .container {
+      @include flex(column, center, center);
+    }
+
+    .text {
+      @include flex(column, center, center);
+    }
+  }
+  @include responsive(600px) {
+    .image {
+      height: 56rem;
+    }
+  }
+  @include responsive(530px) {
+    .image {
+      height: 57rem;
+    }
+  }
+  @include responsive(480px) {
+    .image {
+      height: 45rem;
+    }
+  }
+  @include responsive(400px) {
+    .image {
+      height: 37rem;
+    }
+  }
 }
 
 .s-psicoterapia {
@@ -71,6 +103,27 @@
       width: 100%;
       max-width: 57.3rem;
     }
+  }
+
+  @include responsive(980px) {
+    text-align: center;
+    padding-bottom: 5rem;
+    .container {
+      @include flex(column-reverse, center, center);
+    }
+    .image {
+      height: 50rem;
+    }
+
+    .text {
+      @include flex(column, center, center);
+    }
+  }
+  @include responsive(500px) {
+    padding: 5rem 0;
+  }
+  @include responsive(450px) {
+    padding: 0rem 0;
   }
 }
 
@@ -109,10 +162,23 @@
       }
     }
   }
+  @include responsive(980px) {
+    .container {
+      text-align: center;
+    }
+    ul {
+      @include flex(column, space-between, center);
+      li {
+        .item {
+          max-width: 45rem;
+        }
+      }
+    }
+  }
 }
 
 .s-testmonials {
-  margin-bottom: 5.5rem;
+  margin-bottom: 10rem;
   .container {
     @include flex(row, space-between, start);
     gap: 5rem;
@@ -131,7 +197,6 @@
           #f2d2be 0.01%,
           #e09590 100%
         );
-        // padding: 4rem 2.5rem;
         border-radius: 0.5rem;
         position: relative;
 
@@ -144,7 +209,6 @@
         }
 
         p {
-          // margin-top: 4rem;
           padding: 4rem 2.5rem;
           height: 16.6rem;
         }
@@ -160,9 +224,41 @@
       margin-bottom: 11.3rem;
     }
   }
+
+  @include responsive(980px) {
+    text-align: center;
+    .container {
+      @include flex(column-reverse, space-between, center);
+    }
+
+    .testmonials-list {
+      li {
+        .item {
+          p {
+            height: initial;
+          }
+        }
+      }
+    }
+
+    .text {
+      @include flex(column, center, center);
+      gap: 2rem;
+
+      p {
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
+      .btn.btn-primary {
+        display: none;
+      }
+    }
+  }
 }
 
 .s-faq {
+  margin-bottom: 2rem;
   .container {
     @include flex(column, space-between, center);
   }
@@ -253,6 +349,13 @@
       }
     }
   }
+
+  @include responsive(980px) {
+    text-align: center;
+    .container {
+      @include flex(column, center, center);
+    }
+  }
 }
 
 .s-message {
@@ -262,6 +365,7 @@
     @include flex(column, space-between, center);
     text-align: center;
   }
+
   p {
     font-size: 1.8rem;
     width: 100%;
@@ -270,6 +374,9 @@
       font-size: 2.6rem;
       font-weight: 600;
       color: $brand-brown;
+    }
+    b {
+      font-size: 2rem;
     }
   }
 }
@@ -284,8 +391,16 @@ footer {
       color: $brand-white;
     }
   }
+
   .instagram {
     @include flex(row, space-between, center);
     gap: 1rem;
+  }
+
+  @include responsive(980px) {
+    .container {
+      @include flex(column, center, center);
+      gap: 4rem;
+    }
   }
 }

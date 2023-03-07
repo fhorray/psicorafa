@@ -23,15 +23,25 @@
         <li><a href="#">Sobre mim</a></li>
         <li><a href="#">Atendimento</a></li>
       </ul>
-      <img src="./img/logo-bege.png" alt="Logo">
+      <a href="index.html"><img src="../img/logo-bege.png" alt="Logo"></a>
       <ul>
         <li><a href="#">Perguntas Frequentes</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
+
+      <!-- Menu Mobile -->
+      <img class="menu-hamburguer js-menu-hamburguer" src="./img/menu-hamburguer.svg" alt="Menu Hamburguer">
+
+      <ul class="menu-mobile js-menu-mobile">
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#atendimento">Atendimento</a></li>
+        <li><a href="#faq">Perguntas Frequentes</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5511961808380">Contato</a></li>
+      </ul>
     </div>
   </header>
 
-  <section class="s-hero">
+  <section id="sobre-mim" class="s-hero">
     <div class="container">
 
       <div class="image">
@@ -49,7 +59,7 @@
     </div>
   </section>
 
-  <section class="s-psicoterapia">
+  <section id="terapia" class="s-psicoterapia">
     <div class="container">
       <div class="text">
         <span class="tag">Psicoterapia</span>
@@ -66,7 +76,7 @@
     </div>
   </section>
 
-  <section class="s-atendimento">
+  <section id="atendimento" class="s-atendimento">
     <div class="container">
       <span class="tag">Atendimento</span>
       <h2>Como acontece o atendimento?</h2>
@@ -94,29 +104,25 @@
     </div>
   </section>
 
-  <section class="s-testmonials">
+  <section id="depoimentos" class="s-testmonials">
     <div class="container">
       <ul class="testmonials-list">
         <li>
           <div class="item">
             <img class="aspas" src="./img/aspas-i.svg" alt="Aspas Icon">
-            <p>A terapia vem me ajudando a entender como certos sentimentos funcionam, coisa que eu tinha uma dificuldade imensa em identificar e lidar com isso, claro, estou conseguindo lidar melhor, e gostando muito...</p>
-
-
+            <p>A terapia tem sido um verdadeiro divisor de águas na minha vida. Agora, finalmente, estou aprendendo a lidar com meus sentimentos de uma maneira saudável e construtiva. Estou muito grato por ter tomado a decisão de começar essa jornada.</p>
           </div>
         </li>
         <li>
           <div class="item">
             <img class="aspas" src="./img/aspas-i.svg" alt="Aspas Icon">
-            <p>Fiquei bastante a vontade logo no primeiro atendimento. As sessões tem me ajudando muito. Sempre muito atenciosa, levantou pontos que me fizeram refletir e entender quais sao as...</p>
-
+            <p>Estou conseguindo as ferramentas necessárias para lidar com minhas emoções de uma forma mais eficaz. Eu me sinto muito mais confiante e capaz de enfrentar os desafios do dia-a-dia. Estou muito feliz com meu progresso até agora.</p>
           </div>
         </li>
         <li>
           <div class="item">
             <img class="aspas" src="./img/aspas-i.svg" alt="Aspas Icon">
-            <p>Fiquei bastante a vontade logo no primeiro atendimento. As sessões tem me ajudando muito. Sempre muito atenciosa, levantou pontos que me fizeram refletir...</p>
-
+            <p>Tem sido um bom processo. Agora, finalmente, sinto que estou no controle das minhas emoções e não o contrário. Agradeço todos os dias por ter encontrado uma psicóloga tão talentosa e dedicada.</p>
           </div>
         </li>
       </ul>
@@ -132,102 +138,42 @@
     </div>
   </section>
 
-  <section class="s-faq">
+  <section id="faq" class="s-faq">
     <div class="container">
       <span class="tag">FAQ</span>
       <h2>Perguntas Frequentes</h2>
       <dl class="faqs-list">
 
         <dt class="faq-question">
-          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Tenho que ter CNPJ?</button>
+          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Como funciona a terapia online?</button>
           <i aria-hidden="true"><img src="./img/arrow-right.svg" alt="Arrow Right"></i>
         </dt>
         <dd class="faq-answer" id="faq1-desc">
           <div class="faq-answer__content">
-            <p>Suas compras serão emitidas as notas com os dados do seu cadastro, caso tenha preenchido com o CPF a nota será emitida com este dado. Indicamos que após configurar sua loja e iniciar as operações, abra um MEI e atualize seus dados no painel da DROPIM com as informações.</p>
+            <p>A sessão é realizada por meio de uma chamada de vídeo, em um horário e dia previamente combinados. É importante que você esteja em um ambiente privado e silencioso, e que use fones de ouvido para manter a confidencialidade do que é discutido durante a sessão.</p>
           </div>
         </dd>
 
         <dt class="faq-question">
-          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Como funciona o envio de nota fiscal?</button>
+          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Terapia online funciona?</button>
           <i aria-hidden="true"><img src="./img/arrow-right.svg" alt="Arrow Right"></i>
         </dt>
         <dd class="faq-answer" id="faq1-desc">
           <div class="faq-answer__content">
-            <p>Após o pagamento do pedido será emitido uma nota fiscal em seu nome e ficará disponível no painel da DROPIM.
-
-              Junto com o pedido será enviado para seu cliente uma nota de transporte com o valor pago em sua loja.</p>
+            <p>Sim, o acompanhamento online é tão eficaz quanto o acompanhamento presencial e tem a vantagem de ser mais acessível financeiramente e não requerer deslocamentos.</p>
           </div>
         </dd>
 
         <dt class="faq-question">
-          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Meu cliente ficará sabendo quem enviou a mercadoria?</button>
+          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Como eu sei se devo fazer Terapia?</button>
           <i aria-hidden="true"><img src="./img/arrow-right.svg" alt="Arrow Right"></i>
         </dt>
         <dd class="faq-answer" id="faq1-desc">
           <div class="faq-answer__content">
-            <p>Na nota de transporte aparece os dados da distribuidora mas não possui nenhuma menção ao modelo de negócio dropshipping e nenhuma menção da Dropim.</p>
+            <p>Se você estiver experimentando emoções ou comportamentos que estejam afetando negativamente suas atividades cotidianas, impedindo-o de ter um bom convívio social, de realizar seu trabalho de maneira satisfatória, de executar tarefas com tranquilidade ou de se sentir seguro em seu relacionamento amoroso, é importante procurar ajuda. Esses problemas podem estar interferindo na sua qualidade de vida e bem-estar emocional. Buscar ajuda profissional pode ser a chave para encontrar soluções e superar esses obstáculos.</p>
           </div>
         </dd>
 
-        <dt class="faq-question">
-          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Posso vender nos marketplace?</button>
-          <i aria-hidden="true"><img src="./img/arrow-right.svg" alt="Arrow Right"></i>
-        </dt>
-        <dd class="faq-answer" id="faq1-desc">
-          <div class="faq-answer__content">
-            <p>Sim, com os envios são feitos do Brasil os tempos de entregues são os praticados nas principais lojas virtuais e marketplace.
-
-              Utilizando a Loja Integrada você tem o direito ao modulo de marketplace.</p>
-          </div>
-        </dd>
-
-        <dt class="faq-question">
-          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Quanto tempo terei acesso ao painel da Dropim?</button>
-          <i aria-hidden="true"><img src="./img/arrow-right.svg" alt="Arrow Right"></i>
-        </dt>
-        <dd class="faq-answer" id="faq1-desc">
-          <div class="faq-answer__content">
-            <p>A assinatura da DROPIM é anual, você terá acesso por 12 mês ao sistema. <br>
-              Após este prazo você poderá renovar sua assinatura.</p>
-          </div>
-        </dd>
-
-        <dt class="faq-question">
-          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Preciso ter uma loja virtual?</button>
-          <i aria-hidden="true"><img src="./img/arrow-right.svg" alt="Arrow Right"></i>
-        </dt>
-        <dd class="faq-answer" id="faq1-desc">
-          <div class="faq-answer__content">
-            <p>A Dropim disponibiliza os produtos para que você possa vender em sua loja virtual e em marketplace. <br>
-              Mas também é possivel efetuar pedidos diretamente na Dropim para pedidos realizados de forma manual.</p>
-          </div>
-        </dd>
-
-        <dt class="faq-question">
-          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Onde fica os produtos comercializados?</button>
-          <i aria-hidden="true"><img src="./img/arrow-right.svg" alt="Arrow Right"></i>
-        </dt>
-        <dd class="faq-answer" id="faq1-desc">
-          <div class="faq-answer__content">
-            <p>odos os produtos ficam em distribuidores nacionais. <br>
-              Isto garante uma entrega ágil para seu cliente.
-            </p>
-          </div>
-        </dd>
-
-        <dt class="faq-question">
-          <button type="button" aria-expanded="false" aria-controls="faq1-desc">Como funciona caso meu cliente solicite uma troca ou devolução?</button>
-          <i aria-hidden="true"><img src="./img/arrow-right.svg" alt="Arrow Right"></i>
-        </dt>
-        <dd class="faq-answer" id="faq1-desc">
-          <div class="faq-answer__content">
-            <p>Todo o processo de troca e devolução é feito diretamente no painel da Dropim.
-              <br>
-              Desta forma você não precisa receber o produto para efetuar a troca ou devolução, o envio é feito diretamente para o distribuidor e após a validação você recebera o valor em credito no painel da Dropim.
-            </p>
-          </div>
-        </dd>
       </dl>
 
     </div>
@@ -235,11 +181,11 @@
 
   <section class="s-message">
     <div class="container">
-      <p><b>Atenção:</b> Este site não oferece atendimento imediato a pessoas em crise suicida.<br><br>
+      <p><b>Importante:</b> Este site não é capaz de fornecer atendimento imediato para indivíduos em situação de crise suicida.<br><br>
 
         <span>Em caso de crise ligue para o CVV - 188</span><br><br>
 
-        Em caso de emergência, procure o hospital mais próximo. Havendo risco de morte, ligue imediatamente para o SAMU <b>(Telefone: 192)</b>.
+        Caso a situação seja emergencial, procure o hospital mais próximo. Se houver risco iminente de morte, ligue imediatamente para o SAMU <b>(Telefone: 192)</b>.
       </p>
     </div>
   </section>
@@ -253,11 +199,12 @@
       </a>
 
       <p>Rafaela Barreto Santos <b>(​​​CRP 06/166823)</b></p>
-      <p>Criado por: <b><a href="https://fsantos.vercel.app/">Francy Santos</a></b></p>
+      <p>Criado por: <b><a target="_blank" href="https://fsantos.vercel.app/">Francy Santos</a></b></p>
     </div>
   </footer>
 
   <script src="js/faq.js"></script>
+  <script src="js/menu-mobile.js"></script>
 </body>
 
 </html>
