@@ -40,8 +40,8 @@ h2 {
   font-size: 5rem;
   line-height: 120%;
   color: $brand-brown;
-  @include responsive(400px) {
-    font-size: 4.5rem;
+  @include responsive(450px) {
+    font-size: 4rem;
   }
 }
 

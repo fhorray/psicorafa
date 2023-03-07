@@ -35,10 +35,10 @@ h2 {
   font-size: 5rem;
   line-height: 120%;
   color: #c18166; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 450px) {
     h1,
     h2 {
-      font-size: 4.5rem; } }
+      font-size: 4rem; } }
 
 h2 {
   margin-bottom: 1rem; }
