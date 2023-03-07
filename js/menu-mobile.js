@@ -1,6 +1,5 @@
 const menuBtn = document.querySelector(".js-menu-hamburguer");
 const menuMobile = document.querySelector(".js-menu-mobile");
-console.log(menuBtn);
 
 function menuClick() {
   menuMobile.classList.toggle("menu-shown");

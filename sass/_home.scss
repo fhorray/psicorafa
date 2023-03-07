@@ -40,7 +40,7 @@
     text-align: center;
     padding-bottom: 5rem;
     .container {
-      @include flex(column, center, center);
+      @include flex(column-reverse, center, center);
     }
 
     .text {
@@ -109,7 +109,7 @@
     text-align: center;
     padding-bottom: 5rem;
     .container {
-      @include flex(column-reverse, center, center);
+      @include flex(column, center, center);
     }
     .image {
       height: 50rem;
@@ -121,9 +121,15 @@
   }
   @include responsive(500px) {
     padding: 5rem 0;
+    .image {
+      height: 42rem;
+    }
   }
   @include responsive(450px) {
     padding: 0rem 0;
+    .image {
+      height: 35rem;
+    }
   }
 }
 

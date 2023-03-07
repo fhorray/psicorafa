@@ -171,7 +171,7 @@ header.header-bio .container-bio {
       padding-bottom: 5rem; }
       .s-hero .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center; }
       .s-hero .text {
@@ -230,7 +230,7 @@ header.header-bio .container-bio {
       padding-bottom: 5rem; }
       .s-psicoterapia .container {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
       .s-psicoterapia .image {
@@ -242,10 +242,14 @@ header.header-bio .container-bio {
         align-items: center; } }
   @media screen and (max-width: 500px) {
     .s-psicoterapia {
-      padding: 5rem 0; } }
+      padding: 5rem 0; }
+      .s-psicoterapia .image {
+        height: 42rem; } }
   @media screen and (max-width: 450px) {
     .s-psicoterapia {
-      padding: 0rem 0; } }
+      padding: 0rem 0; }
+      .s-psicoterapia .image {
+        height: 35rem; } }
 
 .s-atendimento {
   background-color: #fff9f8;
